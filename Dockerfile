@@ -1,4 +1,4 @@
-FROM jupyter/datascience-notebook:2023-10-10
+FROM jupyter/tensorflow-notebook:python-3.11
 
 LABEL maintainer="Daniele Nucciarelli thenucciasfourth@gmail.com"
 # Install from requirements.txt file
