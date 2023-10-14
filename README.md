@@ -24,7 +24,7 @@ docker pull nutc22/gw-notebook:0.4
 docker run -it --rm --user $(id -u):$(id -g) --group-add users -v ${PWD}:/home/jovyan/work/ -p <PORT>:8888 -e GEN_CERT=yes nutc22/gw-notebook:0.4
 ```
 
-> l'immagine è sviluppata per due tipi di architettura: `arm64` e `amd64`. Nel caso in cui non l'architettura richiesta non sia tra queste, si può tentare di ricostruire l'immagine come indicato [qui](/corso_gw/edit/docker/README.md#modificare-o-clonare-limmagine)
+> l'immagine è sviluppata per due tipi di architettura: `arm64` e `amd64`. Nel caso in cui non l'architettura richiesta non sia tra queste, si può tentare di ricostruire l'immagine come indicato nella sezione **Modificare o clonare l'immagine**
 ### Accesso al jupyterlab
 
 Visitare il sito `https://<IP-ADDR>:<PORT>` e fidarsi del certificato auto firmato.
